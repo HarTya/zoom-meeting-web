@@ -17,7 +17,7 @@ export default async function handler(
 
 		const getRefreshToken = () => {
 			try {
-				return fs.readFileSync('refreshToken.txt', 'utf8')
+				return fs.readFileSync('/tmp/refreshToken.txt', 'utf8')
 			} catch {
 				return `${process.env.FIRST_REFRESH_TOKEN}`
 			}
@@ -35,7 +35,7 @@ export default async function handler(
 				}
 			).then(response => response.json())
 
-		fs.writeFileSync('refreshToken.txt', newRefreshToken)
+		fs.writeFileSync('/tmp/refreshToken.txt', newRefreshToken)
 
 		const headers = {
 			'Content-Type': 'application/json',
