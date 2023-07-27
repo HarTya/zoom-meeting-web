@@ -1,0 +1,26 @@
+{
+  "name": "zoom-meeting-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@zoomus/websdk": "^2.14.0",
+    "jsrsasign": "^10.8.6",
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/jsrsasign": "^10.5.8",
+    "@types/node": "^20.4.5",
+    "@types/react": "^18.2.17",
+    "@types/react-dom": "^18.2.7",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
+  }
+}
